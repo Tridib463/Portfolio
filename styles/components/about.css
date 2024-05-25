@@ -1,0 +1,119 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about_title{
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
+.about_description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.about_hr {
+    border-color: var(--clr-slate800);
+}
+
+.about_subtitle {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+.about_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '\1F44D';
+    padding-left: 1.5em;
+    flex: 1;
+    /* fractionally distribute the two .about_ul classes in equal amount as they share the same class */
+}
+
+.about_list {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+.about_list::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+.about_ul_container{
+    display: flex;
+}
+
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .about_subtitle {
+        font-size: var(--size-2xl);
+    }
+    .about_description{
+        font-size: var(--size-lg);
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+     .about_img{
+        width: 50vw;
+     }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .about_title{
+        font-size: var(--size-4xl);
+        color: var(--clr-light);
+    }
+    .about_subtitle {
+        font-size: var(--size-3xl);
+    }
+    .about_description{
+        font-size: var(--size-2xl);
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+     .about_img{
+        width: 35vw;
+     }
+     .about_list {
+        font-size: var(--size-xl);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
